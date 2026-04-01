@@ -24,7 +24,8 @@ export const StripeTriggerDialog = ({ open, onOpenChange }: Props) => {
   const workflowId = params.workflowId as string;
 
   // Construct the webhook URL
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+  const baseUrl =
+    process.env.NEXT_PUBLIC_APP_URL || "https://synapse-mu-virid.vercel.app";
   const webhookUrl = `${baseUrl}/api/webhooks/stripe?workflowId=${workflowId}`;
 
   const copyToClipboard = async () => {
