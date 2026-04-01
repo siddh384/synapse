@@ -40,4 +40,6 @@ export const auth = betterAuth({
       ],
     }),
   ],
+
+  trustHost: true,
 });
