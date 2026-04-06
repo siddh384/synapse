@@ -26,7 +26,7 @@ function getUrl() {
   const base = (() => {
     if (typeof window !== "undefined") return "";
     if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-    return "https://synapse-mu-virid.vercel.app";
+    return "https://synaps384.vercel.app";
   })();
   return `${base}/api/trpc`;
 }

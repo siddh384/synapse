@@ -26,7 +26,7 @@ export const GoogleFormTriggerDialog = ({ open, onOpenChange }: Props) => {
 
   // Construct the webhook URL
   const baseUrl =
-    process.env.NEXT_PUBLIC_APP_URL || "https://synapse-mu-virid.vercel.app";
+    process.env.NEXT_PUBLIC_APP_URL || "https://synaps384.vercel.app";
   const webhookUrl = `${baseUrl}/api/webhooks/google-form?workflowId=${workflowId}`;
 
   const copyToClipboard = async () => {
